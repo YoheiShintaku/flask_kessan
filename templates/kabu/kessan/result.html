@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+        <meta charset="utf-8">
+        <title>result</title>
+</head>
+<body>
+{% for idx, srs in df.iterrows() %}
+{% for k,v in srs.iteritems() %}
+{% if k=='img_url' %}
+<img src="{{v}}" />
+{% endif %} 
+{% endfor %} 
+{% endfor %} 
+</body>
+</html>
